@@ -30,6 +30,8 @@ ActiveRecord::Schema.define(version: 2020_12_17_214827) do
     t.string "prep_time"
     t.string "cook_time"
     t.string "summary"
+    t.string "name"
+    t.string "img"
     t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

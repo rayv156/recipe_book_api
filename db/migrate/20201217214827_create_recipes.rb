@@ -6,6 +6,8 @@ class CreateRecipes < ActiveRecord::Migration[6.0]
       t.string :prep_time
       t.string :cook_time
       t.string :summary
+      t.string :name
+      t.string :img
       t.integer :user_id
 
       t.timestamps

@@ -9,4 +9,4 @@
 
 GroceryList.create(aisle: ["frozen food", "meat", "granola/cereal"], items: ["pizza", "beef", "corn flakes"], user_id: 1)
 
-Recipe.create(ingredients:["these", "are", "ingredients"], instructions: "these are some instructions", prep_time: "20 mins", cook_time: "20 mins", summary: "This is a summary", user_id: 1)
+Recipe.create(ingredients:["these", "are", "ingredients"], instructions: "these are some instructions", prep_time: "20 mins", cook_time: "20 mins", summary: "This is a summary", name: "BEST PIZZA EVER", img: "https://spoonacular.com/recipeImages/716429-556x370.jpg", user_id: 1)
