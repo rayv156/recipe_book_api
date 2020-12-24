@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 2020_12_17_214827) do
 
   create_table "recipes", force: :cascade do |t|
     t.string "ingredients", default: [], array: true
-    t.string "instructions"
+    t.string "instructions", default: [], array: true
     t.string "prep_time"
     t.string "cook_time"
     t.string "summary"
