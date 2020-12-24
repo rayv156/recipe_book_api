@@ -5,7 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-#user = User.create(username: "rayvel", password: "test1", email: "rayv156@gmail.com", age: 32)
+user = User.create(username: "rayvel", password: "test1", email: "rayv156@gmail.com", age: 32)
 
 GroceryList.create(aisle: ["frozen food", "meat", "granola/cereal"], items: ["pizza", "beef", "corn flakes"], user_id: 1)
 
