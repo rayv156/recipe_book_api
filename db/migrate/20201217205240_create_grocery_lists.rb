@@ -3,6 +3,8 @@ class CreateGroceryLists < ActiveRecord::Migration[6.0]
     create_table :grocery_lists do |t|
       t.string :aisle, array: true, default: []
       t.string :items, array: true, default: []
+      t.string :name
+      t.string :date
       t.integer :user_id
 
       t.timestamps

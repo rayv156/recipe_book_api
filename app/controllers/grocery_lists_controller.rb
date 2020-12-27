@@ -47,6 +47,6 @@ class GroceryListsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def grocery_list_params
-      params.require(:grocery_list).permit({:aisle => []}, {:items => []}, :user_id)
+      params.require(:grocery_list).permit({:aisle => []}, {:items => []}, :name, :date, :user_id)
     end
 end
