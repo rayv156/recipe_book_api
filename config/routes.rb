@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'databases/random'
+  get 'databases/search/:search_term', to: "databases#search"
+  get 'databases/instructions/:recipe_id', to: "databases#instructions"
+  get 'databases/information/:recipe_id', to: "databases#information"
   resources :recipes
   resources :grocery_lists
   resource :users, only: [:create]
