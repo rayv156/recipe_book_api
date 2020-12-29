@@ -1,6 +1,5 @@
 class DatabasesController < ApplicationController
-  skip_before_action :authorized
-  
+  before_action :authorized
   def random
     random = Faraday.get "https://api.spoonacular.com/recipes/random?number=20&apiKey=#{ENV["api_key"]}"
     @random_result = JSON.parse(random.body)
